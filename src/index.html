@@ -11,7 +11,155 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <div class="container">
+        <h2>Personal information</h2>
+        <label for="surname">
+          <h3>Surname:</h3>
+          <input 
+            type="text" 
+            name="surname" 
+            required 
+            autocomplete="off"
+          >
+        </label>
+        <label for="name">
+          <h3>Name:</h3>
+          <input 
+            type="text" 
+            name="name" 
+            required 
+            autocomplete="off"
+          >
+        </label>
+        <label for="age">
+          <h3>How old are You?</h3>
+          <input 
+            type="number" 
+            name="your-age" 
+            value="12" 
+            min="1" 
+            max="100" required
+          >
+        </label>
+        <label for="date">
+          <h3>Full date of birth:</h3>
+          <input 
+            type="date" 
+            name="data-birth" 
+            required
+          >
+        </label>
+        <label for="accept">
+          <h3>I accept the term of the agreement</h3>
+          <input 
+            type="checkbox" 
+            name="accept"
+          >
+        </label>
+      </div>
+  
+      <div class="container">
+        <h2>Registration</h2>
+        <label for="mail">
+          <h3>E-mail:</h3>
+          <input 
+            type="email" 
+            name="e-mail" 
+            placeholder="email@example.com" 
+            required
+          >
+        </label>
+        <label for="pasword">
+          <h3>Password:</h3>
+          <input 
+            type="password" 
+            name="password" 
+            required
+          >
+        </label>
+      </div>
+  
+      <div class="container">
+        <h2>An interesting fact about you!</h2>
+        <label for="love-cats">
+          <h3>Do you love cats?</h3>
+          <input type="radio" name="love-cats">
+          <h4>Yes</h4>
+          <input type="radio" name="love-cats">
+          <h4>No</h4>
+        </label>
+        <label for="favorite-color">
+          <h3>What is your favorite color?</h3>
+          <input  
+            type="color" 
+            name="favorite-color"
+          >
+        </label>
+        <label for="time-to-bed">
+          <h3>What time do you go to bed?</h3>
+          <input type="time">
+        </label>
+        <label for="favorite-car">
+          <h3>What are your favorite cars?</h3>
+          <select name="favorite-car">
+            <option value="car" 
+              disabled 
+              selected>
+              Choos the car
+            </option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Volvo">Volvo</option>
+          </select>
+        </label>
+        <label for="rate-us">
+          <h3>How do you rate our work?</h3>
+          <input 
+            type="range" 
+            min="0" 
+            max="10" 
+            step="1" 
+            name="rate-us"
+          >
+        </label>
+      </div>
+  
+      <div class="container">
+        <h2>Additional info:</h2>
+        <label for="comments">
+          <h3>Comments:</h3>
+          <textarea 
+            name="comments" 
+            cols="25" 
+            rows="3" 
+            autocomplete="off">
+          </textarea>
+        </label>
+        <label for="recommend">
+          <h3>Would you recommend us?</h3>
+          <select name="recommend">
+            <option 
+              value="recommend" 
+              disabled 
+              selected>
+              Choose some
+            </option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </div>
+  
+      <label for="submit">
+        <input 
+          type="submit" 
+          class="submit" 
+          name="submit"
+        >
+      </label>
+    </form>
+    
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
