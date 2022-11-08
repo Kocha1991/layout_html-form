@@ -1,21 +1,13 @@
 /* styles go here */
 
-fieldset {
+.container {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
 }
 
-legend {
+.legend {
   margin-left: 0;
-}
-
-h3 {
-  display: inline-block;
-}
-
-h4 {
-  display: inline-block;
 }
 
 .label {
